@@ -1,0 +1,4 @@
+node_modules/
+.gate-scan/
+*.tar.gz
+*.log
