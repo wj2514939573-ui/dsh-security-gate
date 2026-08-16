@@ -1,0 +1,36 @@
+{
+  "$comment": "Reproducible definition reference for loading this plugin into DSH. The exact payload (including full source) is in plugin/source.json.",
+  "pluginId": "gate-2",
+  "packageId": "pkg-18",
+  "define": {
+    "kind": "new",
+    "idPrefix": "gate",
+    "name": "security-gate 插件安检门",
+    "purpose": "安装插件前先过安检门：双维静态安全扫描（恶意风险分 + 权限能力面）、LLM AI 复核、运行时注册观察、社区安全评分与漏洞赏金。"
+  },
+  "files": {
+    "host": "plugin/host.js",
+    "hostRaw": "plugin/host.raw.js",
+    "client": "plugin/client.js",
+    "clientRaw": "plugin/client.raw.js",
+    "payload": "plugin/source.json"
+  },
+  "tools": [
+    "gate_scan",
+    "gate_registry",
+    "gate_rate",
+    "gate_report"
+  ],
+  "features": [
+    "双维静态扫描（恶意风险分 / 权限能力面）",
+    "LLM AI 复核（判断误报）",
+    "运行时注册观察（新增 / 消失工具）",
+    "新工具上膛主动提醒",
+    "社区安全评分",
+    "漏洞赏金审核流",
+    "扫描历史（落盘）",
+    "报告一键分享 / 复制",
+    "中英双语界面",
+    "会话头部快检入口 + 浮动面板"
+  ]
+}
