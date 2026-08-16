@@ -1,0 +1,32 @@
+{
+  "name": "dsh-security-gate",
+  "version": "1.0.0",
+  "description": "SecurityGate（插件安检门）— inspect DSH plugins before you install them: dual-dimension static scan (malicious-risk score + capability surface), LLM AI review, runtime registry watch, community security ratings and bug bounty.",
+  "license": "MIT",
+  "author": "wangjing",
+  "main": "plugin/host.js",
+  "files": [
+    "plugin",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md"
+  ],
+  "keywords": [
+    "dsh",
+    "cordis",
+    "plugin",
+    "security",
+    "sandbox",
+    "static-analysis",
+    "ai-review",
+    "bug-bounty",
+    "security-gate"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "extract": "node scripts/extract-source.mjs",
+    "publish": "node scripts/publish-rest.mjs"
+  }
+}
